@@ -55,7 +55,9 @@ jobs:
           echo " sleep 10 seconds for container to run"
           sleep 10
           # Push the docker image to ECR repository
+          curl localhost:8080 -vvv
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          
           
       - name: Build, Test, Tag and push dogs image to Amazon ECR
         env: 
@@ -74,4 +76,5 @@ jobs:
           echo " sleep 10 seconds for container to run"
           sleep 10
           # Push the docker image to ECR repository
+          curl localhost:8081 -vvv
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG  
