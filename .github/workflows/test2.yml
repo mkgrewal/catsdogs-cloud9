@@ -1,4 +1,4 @@
-name: Deploy ECR
+name: Deploying ECR to ec2
 
 on:
   push:
