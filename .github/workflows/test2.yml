@@ -1,4 +1,4 @@
-name: Deploying ECR to ec2
+name: Deploying ECR to ec2 by manpreet
 
 on:
   push:
