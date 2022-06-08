@@ -1,4 +1,4 @@
-name: Deploying ECR by manpreet
+name: Deploying ECR by manpreet grewal
 
 on:
   push:
