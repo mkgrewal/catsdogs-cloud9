@@ -34,7 +34,7 @@ jobs:
     - name: Triggering image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: assignment1-ecr
+        ECR_REPOSITORY: manpreet
         IMAGE_TAG: dogs
       run: |
         cd dogs/
@@ -52,7 +52,7 @@ jobs:
     - name: Triggering image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: assignment1-ecr
+        ECR_REPOSITORY: manpreet
         IMAGE_TAG: cats
         
       run: |
